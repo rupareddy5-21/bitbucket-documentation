@@ -53,7 +53,7 @@ In this tutorial, you learn to:
 
 1. Create a new static web app with the following values.
 
-    :::image type="content" source="media/publish-bitbucket/azure-portal-static-web-apps-bitbucket.png" alt-text="Deployment details - other":::
+    ![Deployment details - other](media/publish-bitbucket/azure-portal-static-web-apps-bitbucket.png)
 
     | Setting | Value |
     |---|---|
@@ -77,7 +77,7 @@ In this tutorial, you learn to:
     > [!NOTE]
     > This value is set aside for now because you'll copy and paste more values in coming steps.
 
-    :::image type="content" source="media/publish-bitbucket/deployment-token.png" alt-text="Deployment token":::
+    ![Deployment token](media/publish-bitbucket/deployment-token.png)
 
 ## Create the Pipeline in Bitbucket
 
@@ -85,13 +85,13 @@ In this tutorial, you learn to:
 
 2. Select **Pipelines** on the left menu.
 
-    :::image type="content" source="media/publish-bitbucket/select-pipeline.png" alt-text="Build pipeline":::
+    ![Build pipeline](media/publish-bitbucket/select-pipeline.png)
 
 3. Select **Create your first pipeline**.
 
 4. In the *Create your first pipeline* screen, select **Starter pipeline**.
 
-    :::image type="content" source="media/publish-bitbucket/starter-pipeline.png" alt-text="Configure pipeline":::
+    ![Configure pipeline](media/publish-bitbucket/starter-pipeline.png)
 
 5. Copy the following YAML and replace the generated configuration in your pipeline with this code.
 
@@ -130,7 +130,7 @@ In this tutorial, you learn to:
 
 10. Paste in the deployment token in the _Value_ box.
 
-    :::image type="content" source="media/publish-bitbucket/variable-token.png" alt-text="Variable token":::
+    ![Variable token](media/publish-bitbucket/variable-token.png)
 
 11. Make sure the **Secured** checkbox is selected.
 
@@ -140,7 +140,7 @@ In this tutorial, you learn to:
 
 14. Select **Run Pipeline**. Choose your **Branch** and **Pipeline** and click **Run**.
 
-    :::image type="content" source="media/publish-bitbucket/run-pipeline.png" alt-text="Pipeline":::
+    ![Pipeline](media/publish-bitbucket/run-pipeline.png)
 
 15. This will run the pipeline with name **Initial Bitbucket Pipelines configuration**.
 
@@ -148,7 +148,7 @@ In this tutorial, you learn to:
 
 17. Select the **URL** to see your newly deployed website.
 
-    :::image type="content" source="media/publish-bitbucket/deployment-location.png" alt-text="Deployment location":::
+    ![Deployment location](media/publish-bitbucket/deployment-location.png)
 
 ## Clean up resources
 
