@@ -31,7 +31,7 @@ In this tutorial, you learn to:
 
 1. Select **Import repository** to begin importing a sample application.
   
-    :::image type="content" source="/media/publish-bitbucket/bitbucket-repo.png" alt-text="Bitbucket Repo":::
+    :::image type="content" source="media/publish-bitbucket/bitbucket-repo.png" alt-text="Bitbucket Repo":::
 
 1. In **Old repository URL**, enter `https://github.com/staticwebdev/vanilla-api.git`.
 
