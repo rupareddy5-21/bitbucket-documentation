@@ -105,14 +105,15 @@ In this tutorial, you learn to:
             script:
               - pipe: rupareddy5out/deploy_custom:master
                 variables:
-                    APP_LOCATION: '/opt/atlassian/pipelines/agent/build/src'
-                    OUTPUT_LOCATION: '/opt/atlassian/pipelines/agent/build'
-                    API_LOCATION: '/opt/atlassian/pipelines/agent/build/api'
+                    APP_LOCATION: '$BITBUCKET_CLONE_DIR/src'
+                    API_LOCATION: '$BITBUCKET_CLONE_DIR/api'
+                    OUTPUT_LOCATION: '$BITBUCKET_CLONE_DIR'
                     API_TOKEN: $deployment_token
     ```
 
     > [!NOTE]
     > If you are not using the sample app, the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` need  to change to match the values in your application.
+    > Note that you have to give the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` only after `$BITBUCKET_CLONE_DIR` as shown above.
 
     [!INCLUDE [static-web-apps-folder-structure](../../includes/static-web-apps-folder-structure.md)]
 
