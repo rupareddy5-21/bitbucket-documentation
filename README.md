@@ -85,9 +85,9 @@ In this tutorial, you learn to:
 
 2. Select **Pipelines** on the left menu.
 
-    ![Build pipeline](media/publish-bitbucket/select-pipeline.png)
-
 3. Select **Create your first pipeline**.
+
+    ![Build pipeline](media/publish-bitbucket/select-pipeline.png)
 
 4. In the *Create your first pipeline* screen, select **Starter pipeline**.
 
