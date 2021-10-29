@@ -13,7 +13,7 @@ This article demonstrates how to deploy to [Azure Static Web Apps](./overview.md
 In this tutorial, you learn to:
 
 - Set up an Azure Static Web Apps site
-- Create a Bitbucket Pipeline to build and publish a static web app
+- Create a Bitbucket Pipeline to build and publish a Static Web App
 
 ## Prerequisites
 
@@ -22,14 +22,14 @@ In this tutorial, you learn to:
   - Bitbucket includes **Pipelines**. If you need help getting started with Pipelines, see [Create your first pipeline](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/).
   - The Static Web App Pipeline Task currently only works on **Linux** machines. When running the pipeline mentioned below, please ensure it is running on a Linux VM.
 
-## Create a static web app in an Bitbucket
+## Create a Static Web App project in Bitbucket
 
   > [!NOTE]
   > If you have an existing app in your repository, you may skip to the next section.
 
 1. Create/Import a new repository in Bitbucket.
 
-1. Select **Import repository** to begin importing a sample application.
+1. Select **Import repository** to import the sample application.
   
     :::image type="content" source="media/publish-bitbucket/bitbucket-repo.png" alt-text="Bitbucket Repo":::
 
@@ -39,7 +39,7 @@ In this tutorial, you learn to:
 
 1. Select **Import repository**.
 
-## Create a static web app
+## Create a Static Web App
 
 1. Navigate to the [Azure portal](https://portal.azure.com).
 
@@ -116,7 +116,7 @@ In this tutorial, you learn to:
 
     [!INCLUDE [static-web-apps-folder-structure](../../includes/static-web-apps-folder-structure.md)]
 
-    The `azure_static_web_apps_api_token` value is self managed and is manually configured.
+    The `API_TOKEN` value is self managed and is manually configured.
 
 6. Select **Add variables**.
 
@@ -136,7 +136,7 @@ In this tutorial, you learn to:
 
 13. Select **Commit file** to return to your pipelines tab.
 
-14. Select **Run Pipeline** and choose your **Branch** and **Pipeline** and click **Run**.
+14. Select **Run Pipeline**. Choose your **Branch** and **Pipeline** and click **Run**.
 
     :::image type="content" source="media/publish-bitbucket/run-pipeline.png" alt-text="Pipeline":::
 
