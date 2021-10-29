@@ -113,6 +113,7 @@ In this tutorial, you learn to:
 
     > [!NOTE]
     > If you are not using the sample app, the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` need  to change to match the values in your application.
+    > 
     > Note that you have to give the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` only after `$BITBUCKET_CLONE_DIR` as shown above.
 
     [!INCLUDE [static-web-apps-folder-structure](../../includes/static-web-apps-folder-structure.md)]
