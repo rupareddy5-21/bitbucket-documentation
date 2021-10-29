@@ -130,7 +130,7 @@ In this tutorial, you learn to:
 
 10. Paste in the deployment token in the _Value_ box.
 
-    ![Variable token](media/publish-bitbucket/variable-token.png)
+    ![Variable token](media/publish-bitbucket/variable-token2.png)
 
 11. Make sure the **Secured** checkbox is selected.
 
