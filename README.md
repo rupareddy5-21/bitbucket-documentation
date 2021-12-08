@@ -13,16 +13,16 @@ This article demonstrates how to deploy to [Azure Static Web Apps](./overview.md
 In this tutorial, you learn to:
 
 - Set up an Azure Static Web Apps site
-- Create a Bitbucket Pipeline to build and publish a Static Web App
+- Create a Bitbucket Pipeline to build and publish a static web app
 
 ## Prerequisites
 
 - **Active Azure account:** If you don't have one, you can [create an account for free](https://azure.microsoft.com/free/).
 - **Bitbucket project:** If you don't have one, you can [create a project for free](https://confluence.atlassian.com/bitbucketserver/creating-projects-776639848.html).
   - Bitbucket includes **Pipelines**. If you need help getting started with Pipelines, see [Create your first pipeline](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/).
-  - The Static Web App Pipeline Task currently only works on **Linux** machines. When running the pipeline mentioned below, please ensure it is running on a Linux VM.
+  - The static web app Pipeline Task currently only works on **Linux** machines. When running the pipeline mentioned below, please ensure it is running on a Linux VM.
 
-## Create a Static Web App project in Bitbucket
+## Create a static web app project in Bitbucket
 
   > [!NOTE]
   > If you have an existing app in your repository, you may skip to the next section.
@@ -39,7 +39,7 @@ In this tutorial, you learn to:
 
 1. Select **Import repository**.
 
-## Create a Static Web App
+## Create a static web app
 
 1. Navigate to the [Azure portal](https://portal.azure.com).
 
@@ -103,7 +103,7 @@ In this tutorial, you learn to:
             name: Deploy to test
             deployment: test
             script:
-              - pipe: rupareddy5out/deploy_custom:master
+              - pipe: microsoft/azure-static-web-apps-deploy:master
                 variables:
                     APP_LOCATION: '$BITBUCKET_CLONE_DIR/src'
                     API_LOCATION: '$BITBUCKET_CLONE_DIR/api'
