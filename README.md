@@ -159,7 +159,4 @@ Clean up the resources you deployed by deleting the resource group.
 3. Select the resource group name you used in this tutorial.
 4. Select **Delete resource group** from the top menu.
 
-## Next steps
 
-> [!div class="nextstepaction"]
-> [Configure Azure Static Web Apps](./configuration.md)
