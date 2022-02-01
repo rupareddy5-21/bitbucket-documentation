@@ -103,7 +103,7 @@ In this tutorial, you learn to:
             name: Deploy to test
             deployment: test
             script:
-              - pipe: microsoft/azure-static-web-apps-deploy:master
+              - pipe: microsoft/azure-static-web-apps-deploy:main
                 variables:
                     APP_LOCATION: '$BITBUCKET_CLONE_DIR/src'
                     API_LOCATION: '$BITBUCKET_CLONE_DIR/api'
