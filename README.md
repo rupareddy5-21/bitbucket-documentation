@@ -116,7 +116,7 @@ In this tutorial, you learn to:
     > 
     > Note that you have to give the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` only after `$BITBUCKET_CLONE_DIR` as shown above.
 
-    [!INCLUDE [static-web-apps-folder-structure](../../includes/static-web-apps-folder-structure.md)]
+    [!INCLUDE [static-web-apps-folder-structure](../../blob/main/includes/static-web-apps-folder-structure.md)]
 
     The `API_TOKEN` value is self managed and is manually configured.
 
