@@ -12,14 +12,16 @@ This article demonstrates how to deploy to [Azure Static Web Apps](./overview.md
 
 In this tutorial, you learn to:
 
-- Set up an Azure Static Web Apps site
+- Set up an Azure Static Web Apps site for a [Vanilla API](https://github.com/staticwebdev/vanilla-api.git) sample app
 - Create a Bitbucket Pipeline to build and publish a static web app
 
 ## Prerequisites
 
 - **Active Azure account:** If you don't have one, you can [create an account for free](https://azure.microsoft.com/free/).
 - **Bitbucket project:** If you don't have one, you can [create a project for free](https://confluence.atlassian.com/bitbucketserver/creating-projects-776639848.html).
-  - Bitbucket includes **Pipelines**. 
+  - Bitbucket includes **Pipelines**.  If you haven't created a pipeline before, you first have to enable two-step verification for your Bitbucket account.
+  - You can add SSH Keys using the steps [here](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
+  
   
    > [!NOTE]
    > The static web app Pipeline Task currently only works on **Linux** machines. When running the pipeline mentioned below, please ensure it is running on a Linux VM.
@@ -30,6 +32,10 @@ In this tutorial, you learn to:
   > If you have an existing app in your repository, you may skip to the next section.
 
 1. Create/Import a new repository in Bitbucket.
+
+1. After creating a new project, select **Create repository** and then click on **Import repository**
+ 
+    ![Bitbucket_Repo_import](media/publish-bitbucket/import-repo.jpeg)
 
 1. Select **Import repository** to import the sample application.
   
@@ -88,19 +94,17 @@ In this tutorial, you learn to:
 
 2. Select **Pipelines** on the left menu.
 
-3. If you haven't created a pipeline before, you first have to enable two-step verification for your Bitbucket account.
+3. Ensure that you have enabled two-step verification for you bitbucket account.
 
-4. You can add SSH Keys using the steps [here](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
-
-5. Select **Create your first pipeline**.
+4. Select **Create your first pipeline**.
 
     ![Build pipeline](media/publish-bitbucket/select-pipeline.png)
 
-6. In the *Create your first pipeline* screen, select **Starter pipeline**.
+5. In the *Create your first pipeline* screen, select **Starter pipeline**.
 
     ![Configure pipeline](media/publish-bitbucket/starter-pipeline.png)
 
-7. Copy the following YAML and replace the generated configuration in your pipeline with this code.
+6. Copy the following YAML and replace the generated configuration in your pipeline with this code.
 
     ```yaml
     pipelines:
@@ -120,40 +124,39 @@ In this tutorial, you learn to:
 
     > [!NOTE]
     > If you are not using the sample app, the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` need  to change to match the values in your application.
-    > 
     > Note that you have to give the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` only after `$BITBUCKET_CLONE_DIR` as shown above.
 
     [!INCLUDE [static-web-apps-folder-structure](../../blob/main/includes/static-web-apps-folder-structure)]
 
     The `API_TOKEN` value is self managed and is manually configured.
 
-8. Select **Add variables**.
+7. Select **Add variables**.
 
-9. Add a new variable in **Deployments** section.
+8. Add a new variable in **Deployments** section.
 
-10. Name the variable **deployment_token** (matching the name in the workflow).
+9. Name the variable **deployment_token** (matching the name in the workflow).
 
-11. Copy the deployment token that you previously pasted into a text editor.
+10. Copy the deployment token that you previously pasted into a text editor.
 
-12. Paste in the deployment token in the _Value_ box.
+11. Paste in the deployment token in the _Value_ box.
 
     ![Variable token](media/publish-bitbucket/variable-token2.png)
 
-13. Make sure the **Secured** checkbox is selected.
+12. Make sure the **Secured** checkbox is selected.
 
-14. Select **Add**.
+13. Select **Add**.
 
-15. Select **Commit file** to return to your pipelines tab.
+14. Select **Commit file** to return to your pipelines tab.
 
-16. Select **Run Pipeline**. Choose your **Branch** and **Pipeline** and click **Run**.
+15. Select **Run Pipeline**. Choose your **Branch** and **Pipeline** and click **Run**.
 
     ![Pipeline](media/publish-bitbucket/run-pipeline.png)
 
-17. This will run the pipeline with name **Initial Bitbucket Pipelines configuration**.
+16. This will run the pipeline with name **Initial Bitbucket Pipelines configuration**.
 
-18. Once the deployment is successful, navigate to the Azure Static Web Apps **Overview** which includes links to the deployment configuration. Note how the _Source_ link now points to the branch and location of the Bitbucket repository.
+17. Once the deployment is successful, navigate to the Azure Static Web Apps **Overview** which includes links to the deployment configuration. Note how the _Source_ link now points to the branch and location of the Bitbucket repository.
 
-19. Select the **URL** to see your newly deployed website.
+18. Select the **URL** to see your newly deployed website.
 
     ![Deployment location](media/publish-bitbucket/deployment-location.png)
 
@@ -170,4 +173,4 @@ Clean up the resources you deployed by deleting the resource group.
 ## Additional resources
 
 1. If you need help getting started with Pipelines, see [Create your first pipeline](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/).
-2. 
+
