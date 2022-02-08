@@ -31,7 +31,6 @@ In this tutorial, you learn to:
   > [!NOTE]
   > If you have an existing app in your repository, you may skip to the next section.
 
-1. Create/Import a new repository in Bitbucket.
 
 1. After creating a new project, select **Create repository** and then click on **Import repository**
  
@@ -126,7 +125,7 @@ In this tutorial, you learn to:
     > If you are not using the sample app, the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` need  to change to match the values in your application.
     > Note that you have to give the values for `APP_LOCATION`, `API_LOCATION`, and `OUTPUT_LOCATION` only after `$BITBUCKET_CLONE_DIR` as shown above.
 
-    [!INCLUDE [static-web-apps-folder-structure](../../blob/main/includes/static-web-apps-folder-structure)]
+    [!INCLUDE [static-web-apps-folder-structure](../../blob/main/includes/static-web-apps-folder-structure.md)]
 
     The `API_TOKEN` value is self managed and is manually configured.
 
