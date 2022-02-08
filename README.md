@@ -94,7 +94,7 @@ In this tutorial, you learn to:
 
 2. Select **Pipelines** on the left menu.
 
-3. Ensure that you have enabled two-step verification for you bitbucket account.
+3. Ensure that you have enabled [two-step verification](https://github.com/rupareddy5-21/bitbucket-documentation#prerequisites) for your bitbucket account.
 
 4. Select **Create your first pipeline**.
 
