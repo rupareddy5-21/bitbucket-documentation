@@ -107,8 +107,8 @@ In this tutorial, you learn to:
 
     ```yaml
     pipelines:
-      custom:
-       custom-pipeline:
+      branches:
+        main:
         - step: 
             name: Deploy to test
             deployment: test
